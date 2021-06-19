@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Movie</title>
+
+	
+
+</head>
+<body style="background: linear-gradient(to right,rgb(151, 129, 4),rgb(230, 247, 3),rgb(151, 129, 4));padding-top: 20px;">
+
+	<h2 style="text-align: center;">Movie Booking </h2>
+
+
+	<center>
+		<table >
+			<thead>
+				<tr>
+					<th>First Name</th>
+					<td><input type="text" name="fn" id="fn"></td>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<th>Last Name</th>
+					<td><input type="text" name="ln" id="ln"></td>
+				</tr>
+				<tr>
+					<th>Email</th>
+					<td><input type="text" name="email" id="email"></td>
+				</tr>
+				<tr>
+					<th>Age</th>
+					<td><input type="text" name="age" id="age"></td>
+				</tr>
+            
+            <tr>
+                <th>Phone</th>
+                <td><input type="text" name="phone" id="phone"></td>
+            </tr>
+            
+			<tr>
+					<th>Movie Name</th>
+                    <td>
+                    <select id="movie">
+                    <option>Spider Man- Far from home</option>
+            		<option>Harry Potter and the Goblet of Fire</option>
+            		<option>Inception</option>
+            		<option>Interstellar</option>
+            		<option>Wonder Women</option>
+					<option>Titanic</option>
+            		<option>Green Lantern</option>
+            		<option>Hancock</option>
+            		</select>
+          			</td>
+			</tr>
+        	<tr>
+					<th>Seat</th>
+          			<td>
+            		<select id="seat">
+              		<option>Bronze</option>
+              		<option>Silver</option>
+              		<option>Gold</option>
+              		<option>Platinum</option>
+            		</select>
+          			</td>
+					</tr>
+				
+			<tr id="btna">
+					<td ><input type="button" name="button" id="btn" value="SUBMIT" onclick="submit(); document.getElementById('fname').value = ''; document.getElementById('email').value = ''; document.getElementById('lname').value = '';document.getElementById('age').value = ''; document.getElementById('phone').value = '';"></td>
+			</tr>
+			</tbody>
+		</table>
+		
+		<table border="1" id="show" style="margin-top: 50px;">
+			<thead>
+				<tr>
+					<th>First Name</th>
+					<th>Last Name</th>
+					<th>Email</th>
+					<th>Age</th>
+          			<th>Phone Number</th>
+          			<th>Movie Name</th>
+          			<th>Seat</th>
+          			<th>Price</th>
+				</tr>
+				<tr>
+					<th></th>
+					<th></th>
+					<th></th>
+					<th></th>
+          			<th></th>
+          			<th></th>
+          			<th></th>
+          			<th id="price"></th>
+				</tr>
+			</thead>
+		</table>
+	</center>
+	
+<script src="index.js"></script>
+</body>
+</html>
